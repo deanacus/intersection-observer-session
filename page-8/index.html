@@ -79,22 +79,11 @@
     </section>
     <section class="code">
         <div>
-            <h1>Yep</h1>
+            <h1>Questions/thoughts?</h1>
 
-            <p>Our whole lazy loading script is about 10 lines of code, plus a minor change to our image elements.</p>
+            <h2>Shameless self promotion:</h2>
 
-            <pre><code class="javascript">const observer = new IntersectionObserver( ( entries ) => {
-    entries.map( entry => {
-        if ( entry.isIntersecting ) {
-            let img = entry.target;
-            img.src = img.dataset.src;
-            observer.unobserve( img );
-        }
-    } );
-} )
-document.querySelectorAll( 'img' ).forEach( image => observer.observe( image ) );</code></pre>
-
-            <p><a href="/page-8">Questions? Thoughts?</a></p>
+            <p><a href="https://deanacus.com/article/lazy-loading-images/">I wrote a blog post</a> on this a while back that has a couple of added little details about making it look nice</p>
         </div>
     </section>
 
